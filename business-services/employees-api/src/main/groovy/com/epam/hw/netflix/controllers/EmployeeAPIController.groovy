@@ -26,7 +26,7 @@ class EmployeeAPIController {
                 firstName: employee.firstName,
                 lastName : employee.lastName,
                 email    : employee.email,
-                workspace: null // null? Nope. Let's request exact workspace by employee.workspaceId from workspaces-api. How? With feign client maybe?
+                workspace: workspaceAPIClient.getWorkspaceById(id) // null? Nope. Let's request exact workspace by employee.workspaceId from workspaces-api. How? With feign client maybe?
         ]
     }
 }
