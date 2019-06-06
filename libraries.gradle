@@ -24,6 +24,10 @@ ext {
                     'org.springframework.cloud:spring-cloud-config-server'
             ],
 
+            cloud_hystrix_server: [
+                    'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+            ],
+
             cloud_feign: [
                     'org.springframework.cloud:spring-cloud-starter-openfeign'
             ],
