@@ -8,5 +8,6 @@ include 'commons'
 
 include 'business-services:workspaces-api'
 include 'business-services:employees-api'
-
+include 'infra:hystrix'
+findProject(':infra:hystrix')?.name = 'hystrix'
 
